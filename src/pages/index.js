@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
-import VerticalTimeline from '../components/VerticalTimeline'
 
 import thumb01 from '../assets/images/thumbs/01.jpg'
 import thumb02 from '../assets/images/thumbs/02.jpg'
@@ -76,7 +75,6 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>Experience</h2>
                         </header>
-                        <VerticalTimeline />
                     </section>
 
                     <section id="five">
