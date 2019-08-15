@@ -1271,7 +1271,7 @@
 				background-position:	top left,	center center;
 				background-size:		auto,		cover;
 				left: auto;
-				padding: ($size-header-pad * 1.5) $size-header-pad;
+				padding: ($size-header-pad * 1.5) $size-header-pad ($size-header-pad * 0.5) $size-header-pad;
 				position: relative;
 				text-align: center;
 				top: auto;
