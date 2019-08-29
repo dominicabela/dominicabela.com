@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Strata by HTML5 UP",
-    author: "Hunter Chang",
-    description: "A Gatsby.js Starter based on Strata by HTML5 UP"
+    title: "Dominic Abela Portfolio",
+    author: "Dominic Abela",
+    description: "Developer Portfolio for Dominic Abela"
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -10,10 +10,10 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'gatsby-starter-default',
-        short_name: 'starter',
+        short_name: 'Portfolio',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#ffffff',
+        theme_color: '#b2b2b2',
         display: 'minimal-ui',
         icon: 'src/assets/images/site-icon.png', // This path is relative to the root of the site.
       },
