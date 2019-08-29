@@ -20,12 +20,12 @@ import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
 
 const DEFAULT_IMAGES = [
-    { id: '1', source: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '2', source: full02, thumbnail: thumb02, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '3', source: full03, thumbnail: thumb03, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '4', source: full04, thumbnail: thumb04, caption: 'Photo 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '5', source: full05, thumbnail: thumb05, caption: 'Photo 5', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '6', source: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
+    { id: '1', source: full01, thumbnail: thumb01, caption: '"Alpine"', description: 'Oil on canvas.'},
+    { id: '2', source: full02, thumbnail: thumb02, caption: '"Tidal Basin"', description: 'Oil on canvas.'},
+    { id: '3', source: full03, thumbnail: thumb03, caption: '"Jefferson"', description: 'Watercolor.'},
+    { id: '4', source: full04, thumbnail: thumb04, caption: '"Wanderer"', description: 'Pyrography on wood.'},
+    { id: '5', source: full05, thumbnail: thumb05, caption: '"Venice Canal"', description: 'Pen and ink.'},
+    { id: '6', source: full06, thumbnail: thumb06, caption: '"San Giorgio Maggiore"', description: 'Pen and ink.'}
 ];
 
 class HomeIndex extends React.Component {
@@ -72,12 +72,6 @@ class HomeIndex extends React.Component {
                     </section>
 
                     <section id="four">
-                        <header className="major">
-                            <h2>Experience</h2>
-                        </header>
-                    </section>
-
-                    <section id="five">
                         <header className="major">
                             <h2>Contact</h2>
                         </header>
