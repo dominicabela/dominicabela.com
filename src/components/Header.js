@@ -1,6 +1,6 @@
 import React from 'react'
 
-import avatar from '../assets/images/avatar.jpg'
+import avatar from '../assets/images/monogram.png'
 
 class Header extends React.Component {
     render() {
@@ -9,7 +9,7 @@ class Header extends React.Component {
                 <div className="inner">
                     <a href="#" className="image avatar"><img src={avatar} alt="" /></a>
                     <h1>Dominic Abela</h1>
-                    <h3>Student - Software Engineer - Artist</h3>
+                    <h4>Student • Developer • Artist</h4>
                 </div>
                 <div id="footer">
                 <div className="inner">
