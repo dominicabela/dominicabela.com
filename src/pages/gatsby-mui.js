@@ -5,13 +5,13 @@ import thumb01 from '../assets/images/thumbs/01.jpg'
 
 const NotFoundPage = () => (
   <Layout>
-    <div id='main'>
-        <ProjectPage 
-            title="Gatsby Material UI Starter"
-            image={thumb01}
-            githubLink="https://github.com/dominicabela/gatsby-starter-material-ui"
-            demoLink="https://material-ui-starter.netlify.com/"
-        />
+    <div id="main">
+      <ProjectPage
+        title="Gatsby Material UI Starter"
+        image={thumb01}
+        githubLink="https://github.com/dominicabela/gatsby-starter-material-ui"
+        demoLink="https://material-ui-starter.netlify.com/"
+      />
     </div>
   </Layout>
 )

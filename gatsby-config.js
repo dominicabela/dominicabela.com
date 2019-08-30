@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Dominic Abela Portfolio",
-    author: "Dominic Abela",
-    description: "Developer Portfolio for Dominic Abela"
+    title: 'Dominic Abela Portfolio',
+    author: 'Dominic Abela',
+    description: 'Developer Portfolio for Dominic Abela',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -19,6 +19,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
   ],
 }

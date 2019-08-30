@@ -26,80 +26,142 @@ import capture03 from '../assets/images/captures/03.jpg'
 import capture04 from '../assets/images/captures/04.jpg'
 
 const IMAGES = [
-    { id: '1', source: full01, thumbnail: thumb01, caption: '"Alpine"', description: 'Oil on canvas.'},
-    { id: '2', source: full02, thumbnail: thumb02, caption: '"Tidal Basin"', description: 'Oil on canvas.'},
-    { id: '3', source: full03, thumbnail: thumb03, caption: '"Jefferson"', description: 'Watercolor.'},
-    { id: '4', source: full04, thumbnail: thumb04, caption: '"Wanderer"', description: 'Pyrography on wood.'},
-    { id: '5', source: full05, thumbnail: thumb05, caption: '"Venice Canal"', description: 'Pen and ink.'},
-    { id: '6', source: full06, thumbnail: thumb06, caption: '"San Giorgio Maggiore"', description: 'Pen and ink.'}
-];
+  {
+    id: '1',
+    source: full01,
+    thumbnail: thumb01,
+    caption: '"Alpine"',
+    description: 'Oil on canvas.',
+  },
+  {
+    id: '2',
+    source: full02,
+    thumbnail: thumb02,
+    caption: '"Tidal Basin"',
+    description: 'Oil on canvas.',
+  },
+  {
+    id: '3',
+    source: full03,
+    thumbnail: thumb03,
+    caption: '"Jefferson"',
+    description: 'Watercolor.',
+  },
+  {
+    id: '4',
+    source: full04,
+    thumbnail: thumb04,
+    caption: '"Wanderer"',
+    description: 'Pyrography on wood.',
+  },
+  {
+    id: '5',
+    source: full05,
+    thumbnail: thumb05,
+    caption: '"Venice Canal"',
+    description: 'Pen and ink.',
+  },
+  {
+    id: '6',
+    source: full06,
+    thumbnail: thumb06,
+    caption: '"San Giorgio Maggiore"',
+    description: 'Pen and ink.',
+  },
+]
 
 const PROJECTS = [
-    { id: '1', link: 'developer-portfolio', thumbnail: capture01, caption: 'Developer Portfolio', description: ''},
-    { id: '2', link: 'sf-crime', thumbnail: capture02, caption: 'San Francisco Crime Data', description: ''},
-    { id: '3', link: 'gatsby-mui', thumbnail: capture03, caption: 'Gatsby Material UI Starter', description: ''},
-    { id: '4', link: 'textbook-share', thumbnail: capture04, caption: 'Peer2Peer Textbook Share', description: ''},
-];
+  {
+    id: '1',
+    link: 'developer-portfolio',
+    thumbnail: capture01,
+    caption: 'Developer Portfolio',
+    description: '',
+  },
+  {
+    id: '2',
+    link: 'sf-crime',
+    thumbnail: capture02,
+    caption: 'San Francisco Crime Data',
+    description: '',
+  },
+  {
+    id: '3',
+    link: 'gatsby-mui',
+    thumbnail: capture03,
+    caption: 'Gatsby Material UI Starter',
+    description: '',
+  },
+  {
+    id: '4',
+    link: 'textbook-share',
+    thumbnail: capture04,
+    caption: 'Peer2Peer Textbook Share',
+    description: '',
+  },
+]
 
 class HomeIndex extends React.Component {
+  render() {
+    const siteTitle = 'Dominic Abela'
+    const siteDescription = 'Developer Portfolio'
 
-    render() {
-        const siteTitle = "Dominic Abela"
-        const siteDescription = "Developer Portfolio"
+    return (
+      <Layout>
+        <Helmet>
+          <title>{siteTitle}</title>
+          <meta name="description" content={siteDescription} />
+        </Helmet>
 
-        return (
-            <Layout>
-                <Helmet>
-                    <title>{siteTitle}</title>
-                    <meta name="description" content={siteDescription} />
-                </Helmet>
+        <div id="main">
+          <section id="one">
+            <header className="major">
+              <h2>About Me</h2>
+            </header>
+            <p>Short Summary</p>
+          </section>
 
-                <div id="main">
+          <section id="two">
+            <header className="major">
+              <h2>Projects</h2>
+            </header>
 
-                    <section id="one">
-                        <header className="major">
-                            <h2>About Me</h2>
-                        </header>
-                        <p>Short Summary</p>
-                    </section>
+            <ProjectGallery
+              images={PROJECTS.map(
+                ({ id, link, thumbnail, caption, description }) => ({
+                  link,
+                  thumbnail,
+                  caption,
+                  description,
+                })
+              )}
+            />
+          </section>
 
-                    <section id="two">
-                        <header className="major">
-                            <h2>Projects</h2>
-                        </header>
+          <section id="three">
+            <header className="major">
+              <h2>Artwork</h2>
+            </header>
 
-                        <ProjectGallery images={PROJECTS.map(({ id, link, thumbnail, caption, description }) => ({
-                            link,
-                            thumbnail,
-                            caption,
-                            description
-                        }))} />
+            <Gallery
+              images={IMAGES.map(
+                ({ id, source, thumbnail, caption, description }) => ({
+                  source,
+                  thumbnail,
+                  caption,
+                  description,
+                })
+              )}
+            />
+          </section>
 
-                    </section>
-
-                    <section id="three">
-                        <header className="major">
-                            <h2>Artwork</h2>
-                        </header>
-
-                        <Gallery images={IMAGES.map(({ id, source, thumbnail, caption, description }) => ({
-                            source,
-                            thumbnail,
-                            caption,
-                            description
-                        }))} />
-
-                    </section>
-
-                    <section id="four">
-                        <h5>© {new Date().getFullYear()} Dominic Abela</h5>
-                    </section>
-
-                </div>
-
-            </Layout>
-        )
-    }
+          <section id="four">
+            <h5>© {new Date().getFullYear()} Dominic Abela</h5>
+          </section>
+        </div>
+      </Layout>
+    )
+  }
 }
 
 export default HomeIndex

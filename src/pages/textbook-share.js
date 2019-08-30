@@ -5,12 +5,12 @@ import thumb01 from '../assets/images/thumbs/01.jpg'
 
 const NotFoundPage = () => (
   <Layout>
-    <div id='main'>
-        <ProjectPage 
-            title="Peer2Peer Textbook Share"
-            image={thumb01}
-            githubLink="https://github.com/dominicabela/TextbookShare"
-        />
+    <div id="main">
+      <ProjectPage
+        title="Peer2Peer Textbook Share"
+        image={thumb01}
+        githubLink="https://github.com/dominicabela/TextbookShare"
+      />
     </div>
   </Layout>
 )
