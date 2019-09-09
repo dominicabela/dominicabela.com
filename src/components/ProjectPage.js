@@ -13,7 +13,7 @@ const ProjectPage = props => (
         </li>
       ) : null}
     </ul>
-    <p>Description</p>
+    <p>{props.description}</p>
   </div>
 )
 
