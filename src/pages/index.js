@@ -114,6 +114,11 @@ class HomeIndex extends React.Component {
         <Helmet>
           <title>{siteTitle}</title>
           <meta name="description" content={siteDescription} />
+          <meta property="og:image" content={capture01} />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://www.dominicabela.com/" />
+          <meta property="og:title" content={siteTitle} />
+          <meta property="og:description" content={siteDescription} />
         </Helmet>
 
         <div id="main">
