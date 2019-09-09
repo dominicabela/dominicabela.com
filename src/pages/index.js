@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
-// import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 import ProjectGallery from '../components/ProjectGallery'
 
@@ -24,6 +23,10 @@ import capture01 from '../assets/images/captures/01.jpg'
 import capture02 from '../assets/images/captures/02.jpg'
 import capture03 from '../assets/images/captures/03.jpg'
 import capture04 from '../assets/images/captures/04.jpg'
+
+const BIO = "I'm a junior computer science major with six years of programming experience. Most of my experience has been with front-end development and data visualization but I’ve also worked with cloud computing and robotics."
+const BIO2 = "At my most recent internship, I built a fully autonomous rover capable of navigating through obstacles and communicating map data with other rovers."
+const BIO3 = "I enjoy painting in my spare time and see an enormous overlap in the design principles I use to compose both paintings and web designs and visualizations."
 
 const IMAGES = [
   {
@@ -118,7 +121,10 @@ class HomeIndex extends React.Component {
             <header className="major">
               <h2>About Me</h2>
             </header>
-            <p>Short Summary</p>
+            <p>{BIO}</p>
+            <p>{BIO2}</p>
+            <p>{BIO3}</p>
+            <p>Feel free to <a href="mailto:abelad@cua.edu">contact me</a> or connect on <a href="https://www.linkedin.com/in/dominic-abela/">LinkedIn</a>.</p>
           </section>
 
           <section id="two">
