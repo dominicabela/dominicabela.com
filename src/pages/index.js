@@ -26,7 +26,7 @@ import capture04 from '../assets/images/captures/04.jpg'
 
 const BIO = "I'm a junior computer science major with six years of programming experience. Most of my experience has been with front-end development and data visualization but I’ve also worked with cloud computing and robotics."
 const BIO2 = "At my most recent internship, I built a fully autonomous rover capable of navigating through obstacles and communicating map data with other rovers."
-const BIO3 = "I enjoy painting in my spare time and see an enormous overlap in the design principles I use to compose both paintings and web designs and visualizations."
+const BIO3 = "I enjoy painting in my spare time and see a significant overlap in the design principles I use to compose both paintings and web designs and visualizations."
 
 const IMAGES = [
   {
@@ -79,28 +79,28 @@ const PROJECTS = [
     link: 'developer-portfolio',
     thumbnail: capture01,
     caption: 'Developer Portfolio',
-    description: '',
+    description: 'Personal portfolio website featuring some of my software projects and artwork. Built with Gatsby.js.',
   },
   {
     id: '2',
     link: 'sf-crime',
     thumbnail: capture02,
     caption: 'San Francisco Crime Data',
-    description: '',
+    description: 'Data visualization web app including heatmap and charts for San Francisco crime dataset. Built using React, Chart.js, and Mapbox.',
   },
   {
     id: '3',
     link: 'gatsby-mui',
     thumbnail: capture03,
     caption: 'Gatsby Material UI Starter',
-    description: '',
+    description: 'A starter application to help developers build progressive web apps with Gatsby and Material UI.',
   },
   {
     id: '4',
     link: 'textbook-share',
     thumbnail: capture04,
     caption: 'Peer2Peer Textbook Share',
-    description: '',
+    description: 'Application for students to buy and sell textbooks to each other. Built using React frontend and Google Firebase backend.',
   },
 ]
 
