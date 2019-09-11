@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import avatar from '../assets/images/monogram.png'
+//import avatar from '../assets/images/monogram.png'
+import avatar from '../assets/images/headshot.jpg'
 
 class Header extends React.Component {
   render() {
