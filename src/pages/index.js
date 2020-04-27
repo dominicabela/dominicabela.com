@@ -24,7 +24,7 @@ import capture02 from '../assets/images/captures/02.jpg'
 import capture03 from '../assets/images/captures/03.jpg'
 import capture04 from '../assets/images/captures/04.jpg'
 
-const BIO = "I'm a junior computer science major with six years of programming experience. Most of my experience has been with front-end development and data visualization but I’ve also worked with cloud computing and robotics."
+const BIO = "I'm a computer science major with six years of programming experience graduating in May 2021. My main interests are in software development, data analysis, and machine learning."
 const BIO2 = "At my most recent internship, I built a fully autonomous rover capable of navigating through obstacles and communicating map data with other rovers."
 const BIO3 = "I enjoy painting in my spare time and see a significant overlap in the design principles I use to compose both paintings and web designs and visualizations."
 
@@ -127,7 +127,6 @@ class HomeIndex extends React.Component {
               <h2>About Me</h2>
             </header>
             <p>{BIO}</p>
-            <p>{BIO2}</p>
             <p>{BIO3}</p>
             <p>Feel free to <a href="mailto:abelad@cua.edu">contact me</a> or connect on <a href="https://www.linkedin.com/in/dominic-abela/">LinkedIn</a>.</p>
           </section>
